@@ -1,22 +1,22 @@
 class Bambutop < Formula
   desc "Lightweight terminal monitoring for Bambu Lab 3D printers"
   homepage "https://github.com/rhoopr/bambutop"
-  version "0.4.0"
+  version "0.5.0"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/rhoopr/bambutop/releases/download/v#{version}/bambutop-macos-aarch64.tar.gz"
-      sha256 "cef91b078871ea8f7283c997ded1d4d757d73ae82eca15e237b15f4a0179c1dc"
+      sha256 "07e8aaac524dbf59a360d413792424afb2fb844a419f48342c115f06f2f9226f"
     else
       url "https://github.com/rhoopr/bambutop/releases/download/v#{version}/bambutop-macos-x86_64.tar.gz"
-      sha256 "ab3a3b24986c2c9743313924f3e1fd3d616310b29d877a16cd31d019ae500af3"
+      sha256 "6b9fb7686bb61a1865d2e11958f15d1333812aba7ddb6ee8f97116d70067a257"
     end
   end
 
   on_linux do
     url "https://github.com/rhoopr/bambutop/releases/download/v#{version}/bambutop-linux-x86_64.tar.gz"
-    sha256 "51c67d0b32d13b67d6505236951e08733734e158b318c237dd53f0d901b73e29"
+    sha256 "ec4af205cf7d7b8beb7db5a3de4e68fe3671490baf9fe1ee4bf2c95c7271d2b0"
   end
 
   def install

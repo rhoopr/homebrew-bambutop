@@ -2,7 +2,7 @@ class Bambutop < Formula
   desc "Lightweight terminal monitoring for Bambu Lab 3D printers"
   homepage "https://github.com/rhoopr/bambutop"
   version "0.4.0"
-  license "MIT"
+  license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
